@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../src/bootstrap/bootstrap-5.3.0-alpha3-dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body id="goalbody">
+    <h1>Neuer Wurf</h1>
+
+    <div id="selectareagoal" onclick="readgoal(event)">
+    </div>
+
+    <div id="button-containergoal">
+        <button class="btn btn-success" title="Treffer" id="goalbutton" onclick="goal()">Treffer</button>
+        <button class="btn btn-danger" title="Kein Treffer" id="nogoalbutton" onclick="nogoal()">Kein Treffer</button>
+        <button class="btn btn-primary" title="Punkt löschen" id="deletebutton" onclick="deletePointgoal()">Punkt löschen</button>
+        <button class="btn btn-primary" title="Home" id="homebutton" onclick="goplyermenu()">Zurück</button>
+    </div>
+
+    <script src="site.js" asp-append-version="true"></script>
+    <div class="copyright">
+        ©Lukas Wolff, 2024, All rights reserved
+    </div>
+    <div class="grus">
+     4Tobsi
+  </div>
+</body>
+
+</html>

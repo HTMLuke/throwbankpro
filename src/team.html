@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../src/bootstrap/bootstrap-5.3.0-alpha3-dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="../src/bootstrap/bootstrap-5.3.0-alpha3-dist/css/bootstrap.min.css"></script>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body onload="getPlayers()">
+    <div class="heading">
+      <h1 id="head1team"></h1>
+    </div>
+    <script src="site.js" asp-append-version="true"></script>
+    <div id="addplayer" class="modal" style="display: none; visibility: visible;">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Hinzufügen</h5>
+              <button type="button" class="btn-close" onclick="closeplayerdwindow()" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <p class="headmodal">Bitte gebe hier den neuen Spieler ein:</p>
+              <!--<form action="javascript:void(0);" method="POST">-->
+              <input class="form-control textboxcentre" type="text" id="addnumberbox" placeholder="Spieler Nummer">
+              <input class="form-control textboxcentre" type="text" id="addpositionbox" placeholder="Spieler Position">
+              <p id="eingabefehler" class="error"></p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" onclick="closeplayerdwindow()">Schließen</button>
+              <button type="button" class="btn btn-primary" onclick="addplayer()">Hinzufügen</button>
+              <!--</form>-->
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="playerbtns" class="">
+ 
+      </div>
+    <button class="btn1 btn btn-primary ms-3 align-middle" title="Add" id="addbutton" onclick="openaddplayer()">+</button>
+    <button class="btn btn-primary align-middle" title="Home" id="homebutton" onclick="gohome()">Home</button>
+    <div class="copyright">
+      ©Lukas Wolff, 2024, All rights reserved
+  </div>
+  <div class="grus">
+   4Tobsi
+</div>
+</body>
+
+</html>

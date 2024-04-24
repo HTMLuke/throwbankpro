@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../src/bootstrap/bootstrap-5.3.0-alpha3-dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="../src/bootstrap/bootstrap-5.3.0-alpha3-dist/css/bootstrap.min.css"></script>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body onload="getItems()">
+    <div class="heading">
+      <h1>ThrowbankPro</h1>
+    </div>
+    <script src="site.js" asp-append-version="true"></script>
+    <div id="addteam" class="modal" style="display: none; visibility: visible;">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Hinzufügen</h5>
+              <button type="button" class="btn-close" onclick="closeaddwindow()" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <p class="headmodal">Bitte gebe hier den Team Name ein</p>
+              <!--<form action="javascript:void(0);" method="POST">-->
+              <input class="form-control textboxcentre" type="text" id="addteambox" placeholder="Neues Team">
+              <p id="eingabefehler" class="error"></p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" onclick="closeaddwindow()">Schließen</button>
+              <button type="button" class="btn btn-primary" onclick="addteam()">Hinzufügen</button>
+              <!--</form>-->
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="teambtns" class="">
+
+      </div>
+    <button class="btn1 btn btn-primary ms-3 align-middle" title="Add" id="addbutton" onclick="openaddwindow()">+</button>
+    <button class="btn btn-primary align-middle" title="Close" id="closebutton" onclick="closewin()">Close</button>
+    <div class="copyright">
+      ©Lukas Wolff, 2024, All rights reserved
+  </div>
+  <div class="grus">
+   4Tobsi
+</div>
+</body>
+
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Klick-Koordinaten auslesen</title>
+<style>
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+    }
+    #klickFlaeche {
+        width: 700px;
+        height: 700px;
+        background-image: url('Half_handball_playing_court_with_colors.png');
+        background-size: cover;
+        background-position: center;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-top: 50px;
+    }
+    .punkt {
+        width: 10px;
+        height: 10px;
+        background-color: red;
+        border-radius: 50%;
+        position: absolute;
+    }
+</style>
+</head>
+<body>
+
+<div id="klickFlaeche" onclick="auslesen(event)">
+</div>
+
+<script>
+function auslesen(event) {
+    var flaeche = document.getElementById("klickFlaeche");
+    var flaecheBreite = flaeche.offsetWidth;
+    var flaecheHoehe = flaeche.offsetHeight;
+    
+    var klickX = (event.offsetX / flaecheBreite) * 100;
+    var klickY = (event.offsetY / flaecheHoehe) * 100;
+    
+    // Neues Element erstellen (Punkt)
+    var punkt = document.createElement("div");
+    punkt.className = "punkt";
+    
+    punkt.style.left = "calc(" + klickX + "% - 5px)"; // Offset für die Mitte des Punktes
+    punkt.style.top = "calc(" + klickY + "% - 5px)"; // Offset für die Mitte des Punktes
+    
+    // Punkt zur Klickfläche hinzufügen
+    flaeche.appendChild(punkt);
+}
+</script>
+
+</body>
+</html>

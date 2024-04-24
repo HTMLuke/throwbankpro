@@ -1,0 +1,239 @@
+#addbutton{
+    border-radius: 50%;
+   color: rgb(255, 255, 255);
+   border-color: none;
+   margin-top: 20px;
+   
+
+}
+
+addbutton:hover {
+    background-color: rgb(202, 202, 202);
+  }
+
+.heading {
+    /*font-family: Arial, Helvetica, sans-serif;*/
+    margin-bottom: 1%;
+    margin-left: 1%;
+    margin-top: 1%;
+    /*border: 1px solid rgb(0, 0, 0);*/ 
+    text-align: center;
+  }
+  .btn1 {
+    transition: all 300ms cubic-bezier(0.39, 0.575, 0.565, 1); 
+    margin-bottom: 4px;
+    /* display: block; */
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: none;
+    padding-top: 0px;
+    font-size: 1.8em;
+    color: white;
+    
+  }
+
+#homebutton{
+  margin-top: 15px;
+  padding-top: 0px;
+  margin-left: 10px;
+  font-size: 1.8em;
+  height: 50px;
+  color: white;
+  transition: all 300ms cubic-bezier(0.39, 0.575, 0.565, 1); 
+
+}
+#closebutton{
+  margin-top: 15px;
+  padding-top: 0px;
+  margin-left: 10px;
+  font-size: 1.8em;
+  height: 50px;
+  color: white;
+  transition: all 300ms cubic-bezier(0.39, 0.575, 0.565, 1); 
+
+}
+#backbutton{
+  margin-top: 10px;
+  font-size: 1.6em;
+  padding-top: 0%;
+  height: 45px;
+  color: white;
+
+}
+.playmenu{
+  margin-top: 3px;
+  /* font-size: 1.0em; */
+  color: white;
+  height: 2%;
+  width: 10%;
+
+}
+  body{
+     text-align: center; 
+     align-items: center; 
+  }
+html{
+  width:100%;
+  height:100%;
+}
+  .tnteams{
+    margin-bottom: 1%;
+     align-items: center;
+     text-align: center; 
+    height: 40px;
+    width: 300px;
+  }
+
+  .btnclss{
+     align-items: center; 
+  }
+
+  #addpositionbox{
+    margin-top: 2%;
+  }
+
+  #throwbody {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* height: 100vh; */
+    margin-top: 0;
+}
+
+#selectarea {
+    width: 400px;
+    height: 400px;
+    background-image: url('Half_handball_playing_court_with_colors.png');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    margin-top: 10px;
+  }
+
+.point {
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    border-radius: 50%;
+    position: absolute;  color: white;
+    font-size: 0.8em;
+
+}
+
+#button-container {
+    display: flex;
+     justify-content: space-between;  
+    width: 38%; /* Breite an Klickfläche anpassen */
+    height: 200px;
+    margin-top: 20px;
+
+}
+
+h1 {
+  margin-top: 0%; /* Setzt den oberen Abstand der Überschrift zurück */
+}
+
+#nextbutton{
+  margin-top: 15px;
+  padding-top: 0px;
+  margin-left: 10px;
+  font-size: 1.8em;
+  height: 50px;
+  color: white;
+  transition: all 300ms cubic-bezier(0.39, 0.575, 0.565, 1); 
+}
+#deletebutton{
+  margin-top: 15px;
+  padding-top: 0px;
+  margin-left: 10px;
+  font-size: 1.8em;
+  height: 50px;
+  color: white;
+  transition: all 300ms cubic-bezier(0.39, 0.575, 0.565, 1); 
+
+}
+
+#goalbody {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* height: 100vh; */
+  margin-top: 0;
+}
+
+
+#selectareagoal {
+  width: 388px;
+  height: 250px;
+  background-image: url('goal.png');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  margin-top: 10px;
+}
+
+.pointgoal {
+  width: 30px;
+  height: 30px;
+  background-color: red;
+  border-radius: 50%;
+  position: absolute;
+  color: white;
+  font-size: 1.3em;
+}
+
+.pointgoal2{
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  position: absolute;
+  color: white;
+  font-size: 1.3em;
+}
+
+#button-containergoal {
+  display: flex;
+   justify-content: space-between;  
+  width: 50%; /* Breite an Klickfläche anpassen */
+  height: 200px;
+  margin-top: 20px;
+
+}
+
+#goalbutton{
+  margin-top: 15px;
+  padding-top: 0px;
+  margin-left: 10px;
+  font-size: 1.8em;
+  height: 50px;
+  color: white;
+  transition: all 300ms cubic-bezier(0.39, 0.575, 0.565, 1); 
+}
+
+#nogoalbutton{
+  margin-top: 15px;
+  padding-top: 0px;
+  margin-left: 10px;
+  font-size: 1.8em;
+  height: 50px;
+  color: white;
+  transition: all 300ms cubic-bezier(0.39, 0.575, 0.565, 1); 
+}
+.copyright {
+  position: fixed;
+  bottom: 5px; /* Abstand vom unteren Rand */
+  left: 8px; /* Abstand vom linken Rand */
+  font-size: 10px;
+  color: #5c5b5b; /* Farbe des Textes auf Schwarz ändern */
+}
+
+.grus {
+  position: fixed;
+  bottom: 5px; /* Abstand vom unteren Rand */
+  right: 8px; /* Abstand vom linken Rand */
+  font-size: 10px;
+  color: #e2e2e2; /* Farbe des Textes auf Schwarz ändern */
+}
